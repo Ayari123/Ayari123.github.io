@@ -1,0 +1,831 @@
+/* hoja de estilos CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    min-height: 1000px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+    transition: 0.6s;
+    background-color: rgb(0, 132, 255);
+}
+
+header .BANCITSA {
+    font-weight: 700;
+    color: aqua;
+    text-decoration: none;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+
+header ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 800;
+
+}
+
+header ul li span {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+    border-bottom: 1px solid rgba(red, green, blue, alpha);
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+header.sticky ul li span {
+    color: #000;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+
+    background: url(../assets/itsa.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.banner h2 {
+    color: rgb(251, 254, 255);
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+}
+
+.banner h2 span {
+    color: rgb(0, 4, 255);
+}
+
+.sec {
+    background: #fff;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec2{
+    padding: 90px 50px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+.sec .content {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.mxw800p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.services .box {
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+.services .box .iconBx {
+    margin-top: 25px;
+}
+
+.services .box .iconBx img {
+    max-width: 70px;
+    margin-bottom: 15px;
+}
+
+.services .box h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.stats {
+    background: #000;
+    padding-left: 250px;
+    margin-top: -250px;
+
+}
+
+.stats h3,
+.stats p {
+    color: #fff;
+}
+
+.statsBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    max-width: 100%;
+
+}
+
+.statsBox h2 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.statsBox h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.workBx {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.workBx .brand {
+    position: relative;
+    background: #4978ff;
+    height: 330px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workBx .brand:hover {
+    background: #000;
+}
+
+.workBx .brand a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+}
+
+.teamBx {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    ;
+    grid-gap: 20px;
+    max-width: 100%;
+    margin-top: 40px;
+
+}
+
+.teamBx .member {
+    position: relative;
+    background: #000;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamBx .member .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.teamBx .member .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamBx .member .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.2s;
+    opacity: 0;
+
+}
+
+.teamBx .member .details:hover {
+    opacity: 1;
+}
+
+.teamBx .member .details h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.teamBx .member .details h2 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/*Slider */
+
+.slider {
+    position: relative;
+}
+
+.slider-items {
+    overflow: hidden;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+.slider-items .item {
+    display: none;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: zoom 1s;
+}
+
+.slider-items .item img {
+    max-width: 100%;
+    display: block;
+
+}
+
+.slider-items .item.active {
+    display: block;
+}
+
+.slider-items .item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+
+
+}
+
+.slider .left-slide,
+.slider .right-slide {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #444444;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider .left-slide {
+    left: 10px;
+
+}
+
+.slider .right-slide {
+    right: 10px;
+}
+
+.slider .left-slide:hover,
+.slider .right-slide:hover {
+    background: #46a2fd;
+}
+
+.contact {
+    background: #000;
+}
+
+.contact h3,
+.contact p {
+    color: #fff;
+}
+
+.contactForm {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contactForm form {
+    width: 100%;
+}
+
+.contactForm .row100 {
+    display: flex;
+    width: 100%;
+}
+
+.contactForm .row100 .inputBx50 {
+    width: 50%;
+    margin: 0 20px;
+
+}
+
+.contactForm .row100 .inputBx100 {
+    width: 100%;
+    margin: 0 20px;
+}
+
+.contactForm .row100 input,
+.contactForm .row100 textarea {
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    resize: none;
+}
+
+.contact .row100 select {
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: rgba(12, 32, 214, 0.877);
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    height: calc(3 rem + 2px);
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    resize: none;
+}
+
+.contactForm .row100 textarea {
+    height: 100px;
+}
+
+.contactForm .row100 label {
+    color: #fff;
+}
+
+.contactForm .row100 input::placeholder,
+.contactForm .row100 textarea::placeholder {
+    color: rgba(red, green, blue, alpha);
+}
+
+.contactForm .row100 input[type="submit"] {
+    background: #fff;
+    color: #000;
+    max-width: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+#text {
+    display: block;
+    color: #000;
+    font-weight: 500;
+    padding: 1px;
+    text-align: left;
+    margin-top: -10px;
+
+
+}
+
+.sci {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+}
+
+.sci ul {
+    display: flex;
+}
+
+.sci ul li {
+    list-style: none;
+}
+
+.sci ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.sci ul a img {
+    filter: invert(1);
+    max-width: 40px;
+}
+
+.sci ul li a:hover img {
+    opacity: 0.5;
+}
+
+.tabla {
+    width: 100%;
+}
+
+.tabla thead {
+    background: #46a2fd;
+    color: #000;
+}
+
+.tabla th,
+.tabla td {
+    padding: 10px;
+}
+
+.tabla tr:nth-child(even) {
+    background: #03fafac4;
+}
+
+.tabla tbody tr:hover td {
+    background: rgba(79, 83, 85, 0.659);
+}
+
+.tabla tfoot td {
+    text-align: left;
+}
+
+.tabla tfoot .btn {
+    background: #16e2c7;
+
+}
+
+#button-up {
+    width: 60px;
+    height: 60px;
+    background: #46a2fd;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid transparent;
+
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 20px;
+
+    transition: all 300ms ease;
+    transform: scale(1);
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
+
+
+}
+
+#button-up:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.loginBox {
+    position: fixed;
+    top: 70%;
+    left: 50%;
+
+    width: 350px;
+    height: 450px;
+
+    background: #46a2fd;
+    padding: 80px 40px;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+
+    transform: translate(-50%, -70%);
+}
+
+.loginBox.active {
+    top: 75%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.loginBox .user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -50px;
+    left: 125px;
+
+    background: #fff;
+    padding: 5px;
+
+    border: 4px solid #000;
+}
+
+.loginBox .btnClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 30px;
+    height: 30px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.loginBox h2 {
+    color: #000;
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+.loginBox p {
+    color: #fff;
+    font-weight: 500;
+}
+
+.loginBox input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #fff;
+    height: 40px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"] {
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.loginBox input[type="submit"] {
+    background: #ff267c;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.loginBox input[type="submit"]:hover {
+    background: #4978ff;
+    color: #262626;
+}
+
+.loginBox a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+}
+
+.loginBox a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+
+
+    }
+
+    .toggle:before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        box-shadow: 0 10px 0 #000;
+        transition: 0.5s;
+    }
+
+    .toggle:after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    header,
+    header.sticky {
+        padding: 5px 50px;
+        background: #fff;
+    }
+
+    header .logo,
+    header ul li a {
+        color: #000;
+    }
+
+    header ul {
+        position: absolute;
+        top: 59px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        overflow: auto;
+        visibility: hidden;
+        background: #fff;
+        opacity: 0;
+
+    }
+
+    header.active ul {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        padding-top: 20px;
+    }
+
+    header.active ul li a {
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .banner {
+        background-position: center;
+    }
+
+    .banner h2 {
+        font-size: 60px;
+        padding: 0 50 px;
+    }
+
+    .sec {
+        padding: 100px 50px 50px 50px;
+    }
+
+    .servives .box {
+        width: 100%;
+    }
+
+    .stats {
+        padding-top: 250px;
+
+    }
+
+    .row100 {
+        flex-direction: column;
+    }
+
+    .contactForm .row100 .inputBx50,
+    .contactForm .row100 .inputBx100 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sci {
+        margin: 20px;
+    }
+
+    .sci ul li a img {
+        font-size: 24px;
+    }
+
+}
